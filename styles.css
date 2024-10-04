@@ -1,0 +1,84 @@
+body {
+    background-color: #1a1a1a;
+    /* Bara för att visuellt kunna se bättre och lägga in innehåll bättre */
+    height: 600vh;
+}
+#background-image {
+    background-image: url(https://img.freepik.com/premium-photo/winters-pink-purple-sunset-snowy-hills-forest-growing-there-is-picturesque-scene-promotional-site_410516-19597.jpg);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+
+nav {
+    position: fixed;
+    top: 1rem;
+    left: 50%;
+    transform: translate(-50%);
+    width: 60%;
+    background-color: #f5119a;
+    border-radius: 50px;
+    list-style: none;
+}
+
+
+
+/* -------------------------------------- */
+
+
+
+nav ul
+{
+    display: flex;
+    justify-content: space-around;
+	list-style:none;
+}
+
+nav ul a
+{
+	display:block;
+	color:#333;
+	text-decoration:none;
+	font-weight:700;
+	font-size:1rem;
+	font-family:"HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif
+}
+
+
+nav ul ul
+{
+	display:none;
+	position:absolute;
+	background: #f5119a;
+	padding:0;
+    border-radius: 10px;
+}
+
+nav ul ul li
+{
+	width: 10rem
+}
+
+nav ul ul a
+{
+	line-height:120%;
+	padding: 1rem
+}
+
+
+
+nav ul li:hover > ul
+{
+	display:block;
+}
+nav ul li:hover {
+    scale: 1.1;
+}
+nav ul li ul li a:hover{
+    scale: 0.88;
+}
